@@ -1,83 +1,101 @@
+import { useState } from "react";
 import { profile } from "../data/content";
 
 export function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(profile.email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
+  };
+
   return (
     <section className="bg-[var(--color-charcoal)] px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
       <div className="mx-auto max-w-[1280px]">
         {/* Section label */}
         <div className="section-label">
-          <span className="section-label-index">04</span>
+          <span className="section-label-index">—</span>
           <span className="section-label-line" />
           <span>Contact</span>
         </div>
 
-        <div className="grid gap-14 lg:grid-cols-[1fr_0.72fr] lg:items-end">
-          <div>
-            <h2 className="font-display text-[clamp(3.5rem,9vw,8.5rem)] font-semibold leading-[0.84] tracking-[-0.06em] text-[var(--color-ink)]">
-              Let&apos;s build<br />
-              <em className="not-italic text-[var(--color-accent)]">something useful.</em>
+        <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-8">
+            <h2 className="font-display text-[clamp(2.8rem,6.5vw,5.5rem)] font-semibold leading-[0.9] tracking-[-0.05em] text-[var(--color-ink)]">
+              Let&apos;s build{" "}
+              <span className="text-[var(--color-accent)]">something useful.</span>
             </h2>
-          </div>
 
-          <div className="lg:pb-2">
-            <p className="max-w-[34ch] text-[0.97rem] leading-7 text-[var(--color-muted)]">
-              Open to software engineering roles, collaborations, and projects where technology can solve meaningful problems.
+            <p className="mt-8 max-w-[50ch] text-[1.05rem] leading-8 text-[var(--color-muted)]">
+              Currently open to full-time software engineering roles, team
+              collaborations, and contract backend engagements worldwide. If
+              your team values solid system design, clear communication, and
+              shipping software with care, I&apos;d love to connect.
             </p>
 
-            <div className="mt-9 flex flex-col items-start gap-5">
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <a
+                href={`mailto:${profile.email}`}
+                className="inline-flex items-center gap-2 border border-[var(--color-accent)] bg-[var(--color-accent)] px-7 py-3.5 font-mono text-[0.72rem] font-bold uppercase tracking-[0.14em] text-[var(--color-bg)] transition-all hover:bg-transparent hover:text-[var(--color-accent)]"
+              >
+                <span>Write an Email</span>
+                <span>↗</span>
+              </a>
+
+              <button
+                onClick={handleCopyEmail}
+                className="inline-flex items-center gap-2 border border-[var(--color-line)] bg-[var(--color-paper)] px-5 py-3.5 font-mono text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--color-ink)] transition-colors hover:border-[var(--color-ink)]"
+              >
+                <span>{copied ? "✓ Copied to clipboard" : "Copy Email Address"}</span>
+              </button>
+            </div>
+          </div>
+
+          <div className="border-t border-[var(--color-line)] pt-8 lg:col-span-4 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+            <span className="font-mono text-[0.62rem] uppercase tracking-[0.16em] text-[var(--color-muted)]">
+              Direct Channels
+            </span>
+
+            <div className="mt-6 flex flex-col gap-4 font-mono text-[0.72rem] font-bold uppercase tracking-[0.14em]">
               <a
                 href={profile.github}
                 target="_blank"
                 rel="noreferrer"
-                className="contact-link"
+                className="inline-flex items-center justify-between border-b border-[var(--color-line)] pb-3 text-[var(--color-ink)] transition-colors hover:text-[var(--color-accent)]"
               >
-                <GithubIcon />
-                GitHub ↗
+                <span>GitHub // @Opango14</span>
+                <span>↗</span>
               </a>
+
               <a
                 href={profile.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="contact-link"
+                className="inline-flex items-center justify-between border-b border-[var(--color-line)] pb-3 text-[var(--color-ink)] transition-colors hover:text-[var(--color-accent)]"
               >
-                <LinkedinIcon />
-                LinkedIn ↗
+                <span>LinkedIn // Timothy Opango</span>
+                <span>↗</span>
               </a>
+
               <a
                 href={`mailto:${profile.email}`}
-                className="contact-link"
+                className="inline-flex items-center justify-between border-b border-[var(--color-line)] pb-3 text-[var(--color-ink)] transition-colors hover:text-[var(--color-accent)]"
               >
-                <MailIcon />
-                Email ↗
+                <span>Direct Mail // {profile.email}</span>
+                <span>↗</span>
               </a>
+            </div>
+
+            <div className="mt-8">
+              <span className="inline-flex items-center gap-2 font-mono text-[0.62rem] text-[var(--color-muted)]">
+                <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent)]" />
+                Response time: usually under 24 hours
+              </span>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
-}
-
-function GithubIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-    </svg>
-  );
-}
-
-function LinkedinIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-    </svg>
-  );
-}
-
-function MailIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-      <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-    </svg>
   );
 }

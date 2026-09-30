@@ -12,10 +12,10 @@ import { Work } from "./pages/Work";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-ink)]">
+    <div className="flex min-h-screen flex-col bg-[var(--color-bg)] text-[var(--color-ink)]">
       <ScrollToTop />
       <Nav />
-      <main>
+      <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
