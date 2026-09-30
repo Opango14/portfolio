@@ -8,7 +8,7 @@ export function HomeHero() {
       id="top"
       className="hero-grid relative px-5 pb-20 pt-[7.5rem] sm:px-8 lg:px-12 lg:pb-28 lg:pt-[9.5rem]"
     >
-      <div className="mx-auto max-w-[1280px]">
+      <div>
         {/* Status indicator bar */}
         <div className="reveal mb-8 flex flex-wrap items-center gap-3">
           <div className="inline-flex items-center gap-2 border border-[var(--color-line)] bg-[var(--color-paper)]/80 px-3 py-1.5 backdrop-blur-sm">
@@ -31,7 +31,7 @@ export function HomeHero() {
         </div>
 
         {/* Main headline */}
-        <div className="max-w-[1100px]">
+        <div>
           <h1 className="reveal-1 font-display text-[clamp(2.8rem,7.5vw,7.2rem)] font-semibold leading-[0.92] tracking-[-0.05em] text-[var(--color-ink)]">
             <span>Timothy Opango.</span>
             <br />

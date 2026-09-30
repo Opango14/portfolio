@@ -86,7 +86,7 @@ export function Opanode() {
 
       {/* ── 02. The Core Philosophy & Disciplines ────────────── */}
       <section className="border-b border-[var(--color-line)] bg-[var(--color-paper)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-        <div className="mx-auto max-w-[1280px]">
+        <div>
           <div className="grid gap-12 lg:grid-cols-12 lg:gap-16 lg:items-center">
             <div className="lg:col-span-6">
               <div className="section-label">
@@ -153,14 +153,14 @@ export function Opanode() {
 
       {/* ── 03. The Three Pillars ────────────────────────────── */}
       <section className="border-b border-[var(--color-line)] bg-[var(--color-bg)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-        <div className="mx-auto max-w-[1280px]">
+        <div>
           <div className="section-label">
             <span className="section-label-index">02</span>
             <span className="section-label-line" />
             <span>The Three Pillars</span>
           </div>
 
-          <div className="max-w-[700px]">
+          <div>
             <h2 className="font-display text-[clamp(2.4rem,5vw,4.5rem)] font-semibold leading-[0.95] tracking-[-0.04em] text-[var(--color-ink)]">
               {tagline}
             </h2>
@@ -204,7 +204,7 @@ export function Opanode() {
 
       {/* ── 04. Mission & Vision ─────────────────────────────── */}
       <section className="border-b border-[var(--color-line)] bg-[var(--color-paper)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-        <div className="mx-auto max-w-[1280px]">
+        <div>
           <div className="section-label">
             <span className="section-label-index">03</span>
             <span className="section-label-line" />
@@ -241,7 +241,7 @@ export function Opanode() {
 
       {/* ── 05. Core Values ─────────────────────────────────── */}
       <section className="border-b border-[var(--color-line)] bg-[var(--color-bg)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-        <div className="mx-auto max-w-[1280px]">
+        <div>
           <div className="section-label">
             <span className="section-label-index">04</span>
             <span className="section-label-line" />
@@ -280,8 +280,8 @@ export function Opanode() {
 
       {/* ── 06. Manifesto Closing ────────────────────────────── */}
       <section className="bg-[var(--color-charcoal)] px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
-        <div className="mx-auto max-w-[1280px]">
-          <div className="max-w-[850px]">
+        <div>
+          <div>
             <span className="font-mono text-[0.62rem] uppercase tracking-[0.18em] text-[var(--color-accent)]">
               The OPANODE Manifesto
             </span>

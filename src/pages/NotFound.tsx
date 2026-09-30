@@ -20,7 +20,7 @@ export function NotFound() {
       />
 
       <section className="bg-[var(--color-bg)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-        <div className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           <ButtonLink to="/">
             <span>Back to Home</span>
             <span>→</span>

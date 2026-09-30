@@ -137,7 +137,7 @@ export function Journey() {
 
       {/* ── Experience ─────────────────────────────────────── */}
       <section className="bg-[var(--color-bg)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-        <div className="mx-auto max-w-[1280px]">
+        <div>
           <div className="section-label">
             <span className="section-label-index">01</span>
             <span className="section-label-line" />

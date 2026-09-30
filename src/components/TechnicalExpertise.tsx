@@ -32,7 +32,7 @@ export function TechnicalExpertise() {
 
       {/* ── Cards Grid ─────────────────────────────────────── */}
       <section className="bg-[var(--color-bg)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-        <div className="mx-auto max-w-[1280px]">
+        <div>
           <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
             {expertise.map((group, idx) => (
               <div

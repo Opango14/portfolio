@@ -8,8 +8,7 @@ export const profile = {
   role: "Software Developer · Backend & Full-Stack Developer",
   location: "Kenya",
   github: "https://github.com/Opango14",
-  // TODO: replace with real contact details before publishing
-  email: "hello@timothyopango.dev",
+  email: "opangotimothy14@gmail.com",
   linkedin: "https://www.linkedin.com/in/opango14",
   summary:
     "Software developer with hands-on experience building full-stack web applications and backend systems using Python, Django, FastAPI, JavaScript and Go.",
@@ -21,13 +20,6 @@ export const navLinks = [
   { label: "Journey", href: "/journey" },
   { label: "Opanode", href: "/opanode" },
   { label: "Contact", href: "/contact" },
-];
-
-export const heroFacts = [
-  { label: "Currently", value: "Zone01 Kisumu apprenticeship" },
-  { label: "Focus", value: "Backend systems & full-stack products" },
-  { label: "Stack", value: "Python · Django · FastAPI · Go · JS" },
-  { label: "Based in", value: "Kenya, open to remote work" },
 ];
 
 export type Project = {
@@ -211,13 +203,6 @@ export const expertise: ExpertiseGroup[] = [
       "Open-source software",
     ],
   },
-];
-
-export const opanodeSteps = [
-  { verb: "Understand", detail: "the system as it actually behaves, not as it's assumed to." },
-  { verb: "Find", detail: "the specific problem worth solving, before writing a line of code." },
-  { verb: "Design", detail: "the logic that solves it cleanly, with the trade-offs made explicit." },
-  { verb: "Build", detail: "the solution, and ship something that works in the real world." },
 ];
 
 export const opanodePhilosophy = {

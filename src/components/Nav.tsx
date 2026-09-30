@@ -26,7 +26,7 @@ export function Nav() {
         scrolled ? "bg-[var(--color-bg)]/95 backdrop-blur-xl" : "bg-[var(--color-bg)]"
       }`}
     >
-      <div className="mx-auto flex h-[4.75rem] max-w-[1280px] items-center justify-between px-5 sm:px-8 lg:px-12">
+      <div className="flex h-[4.75rem] items-center justify-between px-5 sm:px-8 lg:px-12">
         {/* Logo */}
         <Link
           to="/"

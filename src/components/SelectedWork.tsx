@@ -199,7 +199,7 @@ export function SelectedWork() {
           </div>
       </PageHeader>
 
-      {/* ── Project List (Organized as FlagshipSpotlight) ──── */}
+      {/* ── Project List ─────────────────────────────── */}
       <div className="divide-y divide-[var(--color-line)]">
         {filteredProjects.map((project, index) => {
           const topo = topologies[project.slug] || defaultTopology;
@@ -213,7 +213,7 @@ export function SelectedWork() {
               key={project.slug}
               className="bg-[var(--color-bg)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28"
             >
-              <div className="mx-auto max-w-[1280px]">
+              <div>
                 {/* Index & Category tag */}
                 <div className="mb-6 flex items-center justify-between font-mono text-[0.62rem] uppercase tracking-[0.16em] text-[var(--color-muted)]">
                   <span className="flex items-center gap-2">

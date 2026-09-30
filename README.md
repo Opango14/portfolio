@@ -17,32 +17,43 @@ npm run preview   # preview the production build
 
 ## Pages
 
-| Route         | Content                                   |
-|---------------|--------------------------------------------|
-| `/`           | Hero + a short teaser of top projects       |
-| `/work`       | All projects, in brief                      |
-| `/expertise`  | Skills, grouped by what they build          |
-| `/journey`    | Experience timeline + education             |
-| `/opanode`    | The Opanode approach/brand                  |
-| `/contact`    | Contact links                               |
+| Route         | Content                                            |
+|---------------|----------------------------------------------------|
+| `/`           | Hero with status telemetry, linking to other pages |
+| `/work`       | All projects, in brief                             |
+| `/expertise`  | Skills, grouped by what they build                 |
+| `/journey`    | Experience timeline + education                    |
+| `/opanode`    | The Opanode approach/brand                         |
+| `/contact`    | Contact links                                      |
+| any other     | 404 page with recovery links                       |
+
+Every page opens with the same header: grid background, section label, accent status pill, and a two-tone headline.
+
+## Layout
+
+- Full-width content — no centered max-width column. Sections, cards, and banners stretch across the viewport with a responsive side gutter (20px → 32px → 48px) so nothing touches the screen edge.
+- The footer stays pinned to the bottom of the screen while scrolling.
+- Sections are separated by hairline borders on the `--color-bg` background.
 
 ## Structure
 
 ```
 src/
   data/content.ts        All copy: profile, projects, experience, skills — edit this to update the site
-  components/            Building blocks (Hero, Nav, Footer, SelectedWork, etc.)
-  pages/                  One file per route, composed from components/
-  hooks/useTheme.ts       Dark mode toggle, persisted to localStorage
-  index.css               Design tokens (colors, fonts) via Tailwind's @theme
+  components/            Shared building blocks
+    PageHeader.tsx         Hero header used by every page (label, pill, headline, intro)
+    ButtonLink.tsx         CTA buttons: accent / paper / ink variants in three sizes
+    Nav.tsx                Fixed top navigation
+    Footer.tsx             Sticky bottom footer
+    SelectedWork.tsx       Projects, with architecture flow per project
+    Journey.tsx            Experience and education cards
+    TechnicalExpertise.tsx Skill matrix as grouped cards
+    Opanode.tsx            Philosophy sections
+    Contact.tsx            Contact actions and direct channels
+  components/home/       HomeHero.tsx — the only section on the home page
+  pages/                 One file per route, composed from components/
+  index.css              Design tokens (colors, fonts) via Tailwind's @theme
 ```
-
-## Before you publish
-
-A few placeholders in `src/data/content.ts` need real values:
-
-- `profile.email` — currently a placeholder address
-- `profile.linkedin` — currently a placeholder URL
 
 ## Deploying
 
@@ -50,6 +61,6 @@ This is a client-side routed single-page app, so the host needs to serve `index.
 
 - **Netlify** — `public/_redirects` is already included.
 - **Vercel** — `vercel.json` is already included.
-- **GitHub Pages** — needs an extra step (a 404.html fallback or the `gh-pages` SPA workaround) since it doesn't support rewrites natively.
+- **GitHub Pages** — needs an extra step (a `404.html` fallback or the `gh-pages` SPA workaround) since it doesn't support rewrites natively.
 
 The build output in `dist/` is otherwise a static site.

@@ -21,7 +21,7 @@ export function PageHeader({
 }: PageHeaderProps) {
   return (
     <section className="hero-grid border-b border-[var(--color-line)] px-5 pb-16 pt-28 sm:px-8 lg:px-12 lg:pb-20 lg:pt-36">
-      <div className="mx-auto max-w-[1280px]">
+      <div>
         <div className="section-label">
           <span className="section-label-index">—</span>
           <span className="section-label-line" />
