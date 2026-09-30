@@ -9,7 +9,7 @@ export function OpanodePerspective() {
       <div className="mx-auto max-w-[1280px]">
         {/* Section label */}
         <div className="section-label">
-          <span className="section-label-index">04</span>
+          <span className="section-label-index">03</span>
           <span className="section-label-line" />
           <span>Brand Philosophy &amp; Ethos</span>
         </div>

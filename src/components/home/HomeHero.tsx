@@ -32,10 +32,10 @@ export function HomeHero() {
         {/* Main headline */}
         <div className="max-w-[1100px]">
           <h1 className="reveal-1 font-display text-[clamp(2.8rem,7.5vw,7.2rem)] font-semibold leading-[0.92] tracking-[-0.05em] text-[var(--color-ink)]">
-            <span>Software developer.</span>
+            <span>Timothy Opango.</span>
             <br />
             <span className="text-[var(--color-accent)]">
-              Backend &amp; systems architecture.
+              Software Developer.
             </span>
           </h1>
         </div>

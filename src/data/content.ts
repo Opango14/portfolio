@@ -104,19 +104,6 @@ export const additionalProjects: Project[] = [
     ],
   },
   {
-    slug: "apprenticeship-platform",
-    name: "Apprenticeship Performance & Analytics Platform",
-    tagline: "Software engineering program management system",
-    stack: ["Flask", "Python", "React", "TypeScript", "PostgreSQL"],
-    status: "In development",
-    description:
-      "A platform that turns apprentice activity — checkpoints, reviews, attendance — into evidence, ratings and trends supervisors can act on.",
-    highlights: [
-      "Data → context → evidence → rating → trend → insight",
-      "Largest system-design exercise in this portfolio",
-    ],
-  },
-  {
     slug: "agwata-restaurant",
     name: "Agwata Restaurant",
     tagline: "Restaurant digital experience",

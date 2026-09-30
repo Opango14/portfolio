@@ -6,7 +6,7 @@ export function CareerSnapshot() {
       <div className="mx-auto max-w-[1280px]">
         {/* Section label */}
         <div className="section-label">
-          <span className="section-label-index">05</span>
+          <span className="section-label-index">04</span>
           <span className="section-label-line" />
           <span>Professional Trajectory</span>
         </div>
