@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { profile } from "../../data/content";
+import { ButtonLink } from "../ButtonLink";
 
 export function HomeHero() {
   return (
     <section
       id="top"
-      className="hero-grid relative border-b border-[var(--color-line)] px-5 pb-20 pt-[7.5rem] sm:px-8 lg:px-12 lg:pb-28 lg:pt-[9.5rem]"
+      className="hero-grid relative px-5 pb-20 pt-[7.5rem] sm:px-8 lg:px-12 lg:pb-28 lg:pt-[9.5rem]"
     >
       <div className="mx-auto max-w-[1280px]">
         {/* Status indicator bar */}
@@ -53,21 +54,15 @@ export function HomeHero() {
           </p>
 
           <div className="flex shrink-0 flex-wrap items-center gap-4">
-            <Link
-              to="/work"
-              className="inline-flex items-center gap-2 border border-[var(--color-accent)] bg-[var(--color-accent)] px-6 py-3 font-mono text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--color-bg)] transition-all duration-200 hover:bg-transparent hover:text-[var(--color-accent)]"
-            >
+            <ButtonLink to="/work" size="md">
               <span>Explore Work</span>
               <span>↗</span>
-            </Link>
+            </ButtonLink>
 
-            <Link
-              to="/opanode"
-              className="inline-flex items-center gap-2 border border-[var(--color-line)] bg-[var(--color-paper)] px-5 py-3 font-mono text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--color-ink)] transition-colors duration-200 hover:border-[var(--color-ink)]"
-            >
+            <ButtonLink to="/opanode" variant="paper" size="md">
               <span>Philosophy</span>
               <span>→</span>
-            </Link>
+            </ButtonLink>
 
             <Link
               to="/contact"
@@ -91,7 +86,7 @@ export function HomeHero() {
           </div>
 
           <dl className="grid grid-cols-1 divide-y divide-[var(--color-line)] sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
-            <div className="flex flex-col gap-1.5 p-5">
+            <div className="relative flex flex-col gap-1.5 p-5 transition-colors hover:bg-[var(--color-paper)]/60">
               <dt className="font-mono text-[0.58rem] uppercase tracking-[0.15em] text-[var(--color-muted)]">
                 01 / Current Role
               </dt>
@@ -101,9 +96,14 @@ export function HomeHero() {
               <span className="text-xs text-[var(--color-muted)]">
                 Zone01 Kisumu (Go, JS, Python, Algorithms)
               </span>
+              <Link
+                to="/journey"
+                aria-label="Software Apprentice — Journey page"
+                className="absolute inset-0"
+              />
             </div>
 
-            <div className="flex flex-col gap-1.5 p-5">
+            <div className="relative flex flex-col gap-1.5 p-5 transition-colors hover:bg-[var(--color-paper)]/60">
               <dt className="font-mono text-[0.58rem] uppercase tracking-[0.15em] text-[var(--color-muted)]">
                 02 / Core Focus
               </dt>
@@ -113,9 +113,14 @@ export function HomeHero() {
               <span className="text-xs text-[var(--color-muted)]">
                 Transactional integrity &amp; REST architectures
               </span>
+              <Link
+                to="/work"
+                aria-label="Backend and APIs — Work page"
+                className="absolute inset-0"
+              />
             </div>
 
-            <div className="flex flex-col gap-1.5 p-5">
+            <div className="relative flex flex-col gap-1.5 p-5 transition-colors hover:bg-[var(--color-paper)]/60">
               <dt className="font-mono text-[0.58rem] uppercase tracking-[0.15em] text-[var(--color-muted)]">
                 03 / Primary Languages
               </dt>
@@ -125,9 +130,14 @@ export function HomeHero() {
               <span className="text-xs text-[var(--color-muted)]">
                 Django, FastAPI, SQLite, PostgreSQL
               </span>
+              <Link
+                to="/expertise"
+                aria-label="Python, Go, TypeScript — Expertise page"
+                className="absolute inset-0"
+              />
             </div>
 
-            <div className="flex flex-col gap-1.5 p-5">
+            <div className="relative flex flex-col gap-1.5 p-5 transition-colors hover:bg-[var(--color-paper)]/60">
               <dt className="font-mono text-[0.58rem] uppercase tracking-[0.15em] text-[var(--color-muted)]">
                 04 / Availability
               </dt>
@@ -137,6 +147,11 @@ export function HomeHero() {
               <span className="text-xs text-[var(--color-muted)]">
                 Full-time remote roles &amp; contract engineering
               </span>
+              <Link
+                to="/contact"
+                aria-label="Open to opportunities — Contact page"
+                className="absolute inset-0"
+              />
             </div>
           </dl>
         </div>

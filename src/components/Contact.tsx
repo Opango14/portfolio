@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { profile } from "../data/content";
+import { ButtonLink } from "./ButtonLink";
+import { PageHeader } from "./PageHeader";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
@@ -11,45 +13,43 @@ export function Contact() {
   };
 
   return (
-    <section className="bg-[var(--color-charcoal)] px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
-      <div className="mx-auto max-w-[1280px]">
-        {/* Section label */}
-        <div className="section-label">
-          <span className="section-label-index">—</span>
-          <span className="section-label-line" />
-          <span>Contact</span>
-        </div>
+    <div className="overflow-hidden">
+      {/* ── Page Header ────────────────────────────────── */}
+      <PageHeader
+        label="Contact"
+        pill="Open To Opportunities · Reply Within 24 Hours"
+        title={
+          <>
+            <span>Let&apos;s build</span>
+            <br />
+            <span className="text-[var(--color-accent)]">something useful.</span>
+          </>
+        }
+        description="Currently open to full-time software engineering roles, team collaborations, and contract backend engagements worldwide. If your team values solid system design, clear communication, and shipping software with care, I&apos;d love to connect."
+      />
 
-        <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-8">
-            <h2 className="font-display text-[clamp(2.8rem,6.5vw,5.5rem)] font-semibold leading-[0.9] tracking-[-0.05em] text-[var(--color-ink)]">
-              Let&apos;s build{" "}
-              <span className="text-[var(--color-accent)]">something useful.</span>
-            </h2>
+      {/* ── Direct Channels ─────────────────────────────── */}
+      <section className="bg-[var(--color-bg)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+        <div className="mx-auto max-w-[1280px]">
+          <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-8">
+              <span className="font-mono text-[0.62rem] uppercase tracking-[0.16em] text-[var(--color-muted)]">
+                Start a conversation
+              </span>
 
-            <p className="mt-8 max-w-[50ch] text-[1.05rem] leading-8 text-[var(--color-muted)]">
-              Currently open to full-time software engineering roles, team
-              collaborations, and contract backend engagements worldwide. If
-              your team values solid system design, clear communication, and
-              shipping software with care, I&apos;d love to connect.
-            </p>
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <ButtonLink href={`mailto:${profile.email}`} size="lg">
+                  <span>Write an Email</span>
+                  <span>↗</span>
+                </ButtonLink>
 
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <a
-                href={`mailto:${profile.email}`}
-                className="inline-flex items-center gap-2 border border-[var(--color-accent)] bg-[var(--color-accent)] px-7 py-3.5 font-mono text-[0.72rem] font-bold uppercase tracking-[0.14em] text-[var(--color-bg)] transition-all hover:bg-transparent hover:text-[var(--color-accent)]"
-              >
-                <span>Write an Email</span>
-                <span>↗</span>
-              </a>
-
-              <button
-                onClick={handleCopyEmail}
-                className="inline-flex items-center gap-2 border border-[var(--color-line)] bg-[var(--color-paper)] px-5 py-3.5 font-mono text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--color-ink)] transition-colors hover:border-[var(--color-ink)]"
-              >
-                <span>{copied ? "✓ Copied to clipboard" : "Copy Email Address"}</span>
-              </button>
-            </div>
+                <button
+                  onClick={handleCopyEmail}
+                  className="inline-flex items-center gap-2 border border-[var(--color-line)] bg-[var(--color-paper)] px-5 py-3.5 font-mono text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--color-ink)] transition-colors hover:border-[var(--color-ink)]"
+                >
+                  <span>{copied ? "✓ Copied to clipboard" : "Copy Email Address"}</span>
+                </button>
+              </div>
           </div>
 
           <div className="border-t border-[var(--color-line)] pt-8 lg:col-span-4 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
@@ -94,8 +94,9 @@ export function Contact() {
               </span>
             </div>
           </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

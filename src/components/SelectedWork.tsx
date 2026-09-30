@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { additionalProjects, featuredProjects } from "../data/content";
+import { ButtonLink } from "./ButtonLink";
+import { PageHeader } from "./PageHeader";
 
 type ProjectTopology = {
   header: string;
@@ -157,28 +159,20 @@ export function SelectedWork() {
   return (
     <div className="overflow-hidden">
       {/* ── Page Header ────────────────────────────────────── */}
-      <section className="hero-grid border-b border-[var(--color-line)] px-5 pb-16 pt-28 sm:px-8 lg:px-12 lg:pb-20 lg:pt-36">
-        <div className="mx-auto max-w-[1280px]">
-          <div className="section-label">
-            <span className="section-label-index">01</span>
-            <span className="section-label-line" />
-            <span>Selected Work</span>
-          </div>
-
-          <h1 className="font-display text-[clamp(2.8rem,7vw,6.5rem)] font-semibold leading-[0.92] tracking-[-0.05em] text-[var(--color-ink)]">
+      <PageHeader
+        label="Selected Work"
+        pill="Production Systems · Shipped & In Use"
+        title={
+          <>
             <span>Production systems,</span>
             <br />
             <span className="text-[var(--color-accent)]">
               decision engines &amp; architecture.
             </span>
-          </h1>
-
-          <p className="mt-8 max-w-[54ch] text-[1.05rem] leading-relaxed text-[var(--color-muted)] sm:text-[1.15rem]">
-            A comprehensive look into software engineered and shipped—spanning
-            auditable financial ledgers, geospatial raster caching, decoupled
-            asynchronous protocols, and full-stack applications.
-          </p>
-
+          </>
+        }
+        description="A comprehensive look into software engineered and shipped—spanning auditable financial ledgers, geospatial raster caching, decoupled asynchronous protocols, and full-stack applications."
+      >
           {/* Filter Pills */}
           <div className="mt-12 flex flex-wrap gap-2 border-t border-[var(--color-line)] pt-6">
             <button
@@ -203,8 +197,7 @@ export function SelectedWork() {
               Featured Systems ({featuredProjects.length})
             </button>
           </div>
-        </div>
-      </section>
+      </PageHeader>
 
       {/* ── Project List (Organized as FlagshipSpotlight) ──── */}
       <div className="divide-y divide-[var(--color-line)]">
@@ -289,27 +282,17 @@ export function SelectedWork() {
                     {/* Action Links */}
                     <div className="mt-10 flex flex-wrap items-center gap-4">
                       {project.live && (
-                        <a
-                          href={project.live}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex items-center gap-2 border border-[var(--color-ink)] bg-[var(--color-ink)] px-5 py-2.5 font-mono text-[0.68rem] font-bold uppercase tracking-[0.14em] text-[var(--color-bg)] transition-colors hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]"
-                        >
+                        <ButtonLink href={project.live} variant="ink">
                           <span>Launch Live App</span>
                           <span>↗</span>
-                        </a>
+                        </ButtonLink>
                       )}
 
                       {project.github && (
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex items-center gap-2 border border-[var(--color-line)] bg-[var(--color-paper)] px-5 py-2.5 font-mono text-[0.68rem] font-bold uppercase tracking-[0.14em] text-[var(--color-ink)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
-                        >
+                        <ButtonLink href={project.github} variant="paper">
                           <span>View Repository</span>
                           <span>↗</span>
-                        </a>
+                        </ButtonLink>
                       )}
                     </div>
                   </div>

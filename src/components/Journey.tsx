@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
 import { education, experience } from "../data/content";
+import { ButtonLink } from "./ButtonLink";
+import { PageHeader } from "./PageHeader";
 
 type JourneyCard = {
   org: string;
@@ -119,36 +120,23 @@ export function Journey() {
   return (
     <div className="overflow-hidden">
       {/* ── Page Header ────────────────────────────────────── */}
-      <section className="hero-grid border-b border-[var(--color-line)] px-5 pb-16 pt-28 sm:px-8 lg:px-12 lg:pb-20 lg:pt-36">
-        <div className="mx-auto max-w-[1280px]">
-          <div className="section-label">
-            <span className="section-label-index">—</span>
-            <span className="section-label-line" />
-            <span>Professional Journey</span>
-          </div>
-
-          <div className="inline-flex items-center gap-2 border border-[var(--color-accent)]/40 bg-[var(--color-accent)]/10 px-3 py-1 font-mono text-[0.62rem] font-bold uppercase tracking-[0.16em] text-[var(--color-accent)]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent)]" />
-            Learning In Public · Execution Over Theory
-          </div>
-
-          <h1 className="mt-6 font-display text-[clamp(2.8rem,7vw,6.5rem)] font-semibold leading-[0.92] tracking-[-0.05em] text-[var(--color-ink)]">
+      <PageHeader
+        label="Professional Journey"
+        pill="Learning In Public · Execution Over Theory"
+        title={
+          <>
             <span>Grounded in practice</span>
             <br />
             <span className="text-[var(--color-accent)]">
               and continuous learning.
             </span>
-          </h1>
-
-          <p className="mt-8 max-w-[54ch] text-[1.05rem] leading-relaxed text-[var(--color-muted)] sm:text-[1.15rem]">
-            Bridging classical computer science theory with high-velocity,
-            peer-driven software engineering and production operations.
-          </p>
-        </div>
-      </section>
+          </>
+        }
+        description="Bridging classical computer science theory with high-velocity, peer-driven software engineering and production operations."
+      />
 
       {/* ── Experience ─────────────────────────────────────── */}
-      <section className="border-b border-[var(--color-line)] bg-[var(--color-bg)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+      <section className="bg-[var(--color-bg)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="mx-auto max-w-[1280px]">
           <div className="section-label">
             <span className="section-label-index">01</span>
@@ -191,20 +179,14 @@ export function Journey() {
             </div>
 
             <div className="flex shrink-0 flex-wrap items-center gap-3">
-              <Link
-                to="/work"
-                className="inline-flex items-center gap-2 border border-[var(--color-line)] bg-[var(--color-paper)] px-5 py-2.5 font-mono text-[0.68rem] font-bold uppercase tracking-[0.14em] text-[var(--color-ink)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
-              >
+              <ButtonLink to="/work" variant="paper">
                 <span>Explore Work</span>
                 <span>↗</span>
-              </Link>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 border border-[var(--color-accent)] bg-[var(--color-accent)] px-5 py-2.5 font-mono text-[0.68rem] font-bold uppercase tracking-[0.14em] text-[var(--color-bg)] transition-colors hover:bg-transparent hover:text-[var(--color-accent)]"
-              >
+              </ButtonLink>
+              <ButtonLink to="/contact">
                 <span>Initiate Contact</span>
                 <span>→</span>
-              </Link>
+              </ButtonLink>
             </div>
           </div>
         </div>
