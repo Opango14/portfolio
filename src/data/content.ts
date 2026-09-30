@@ -159,6 +159,7 @@ export const experience: ExperienceEntry[] = [
 export const education = {
   degree: "Bachelor of Science in Computer Science",
   school: "University of Eldoret",
+  graduated: 2025,
   focus: [
     "Web development",
     "Network security",
@@ -167,19 +168,50 @@ export const education = {
   ],
 };
 
-export const expertise = {
-  Backend: ["Python", "Go", "Django", "FastAPI", "REST APIs", "Database design"],
-  Frontend: ["JavaScript", "HTML", "CSS", "React", "TypeScript", "Tailwind CSS"],
-  "Dev environment": ["Linux", "Git", "GitHub", "Docker", "PostgreSQL"],
-  "Engineering interests": [
-    "Backend systems",
-    "Web applications",
-    "Cybersecurity",
-    "APIs",
-    "Systems development",
-    "Open-source software",
-  ],
+export type ExpertiseGroup = {
+  title: string;
+  tag: string;
+  description: string;
+  items: string[];
 };
+
+export const expertise: ExpertiseGroup[] = [
+  {
+    title: "Backend",
+    tag: "Services & APIs",
+    description:
+      "Python and Go services built on Django and FastAPI — REST contracts, relational schema design, and data flows kept explicit and predictable.",
+    items: ["Python", "Go", "Django", "FastAPI", "REST APIs", "Database design"],
+  },
+  {
+    title: "Frontend",
+    tag: "Interfaces & UX",
+    description:
+      "React and TypeScript for product interfaces, with vanilla JavaScript and hand-written CSS when a lighter client is the right call.",
+    items: ["JavaScript", "HTML", "CSS", "React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "Dev environment",
+    tag: "Tooling & Delivery",
+    description:
+      "A Linux-first daily workflow with Git, Docker, and PostgreSQL keeping builds, reviews, and deployments repeatable.",
+    items: ["Linux", "Git", "GitHub", "Docker", "PostgreSQL"],
+  },
+  {
+    title: "Engineering interests",
+    tag: "Direction & Growth",
+    description:
+      "The problem spaces I keep pulling toward: backend systems, web applications, cybersecurity, APIs, and open-source software.",
+    items: [
+      "Backend systems",
+      "Web applications",
+      "Cybersecurity",
+      "APIs",
+      "Systems development",
+      "Open-source software",
+    ],
+  },
+];
 
 export const opanodeSteps = [
   { verb: "Understand", detail: "the system as it actually behaves, not as it's assumed to." },
