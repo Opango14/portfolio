@@ -49,6 +49,7 @@ export function Nav() {
             <NavLink
               key={link.href}
               to={link.href}
+              end={link.href === "/"}
               className={({ isActive }) =>
                 `nav-link ${isActive ? "active" : ""}`
               }
@@ -79,6 +80,7 @@ export function Nav() {
             <NavLink
               key={link.href}
               to={link.href}
+              end={link.href === "/"}
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
                 `py-3 font-mono text-xs font-bold uppercase tracking-[0.14em] transition-colors ${
