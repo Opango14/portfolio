@@ -200,3 +200,91 @@ export const opanodeSteps = [
   { verb: "Design", detail: "the logic that solves it cleanly, with the trade-offs made explicit." },
   { verb: "Build", detail: "the solution, and ship something that works in the real world." },
 ];
+
+export const opanodePhilosophy = {
+  tagline: "Build with purpose. See with vision. Connect through creativity.",
+  mantra: "Build. See. Connect.",
+  nameMeaning: {
+    opa: {
+      element: "OPA",
+      meaning: "Your identity and origin, inspired by Opango.",
+    },
+    node: {
+      element: "NODE",
+      meaning: "A point of connection, representing technology, systems and interconnected ideas.",
+    },
+    synthesis: {
+      element: "OPANODE",
+      meaning: "Your identity meeting technology and creativity to build, capture and connect.",
+    },
+  },
+  coreBelief:
+    "OPANODE is built on the belief that technology and creativity are interconnected ways of understanding and shaping the world. At its heart, OPANODE believes that every idea has the potential to become something meaningful when creativity, technology and perspective come together.",
+  disciplines:
+    "Technology provides the tools to build. Photography provides the ability to observe, interpret and capture the world. OPANODE brings these disciplines together to transform ideas into experiences, solutions and visual stories.",
+  intention:
+    "The philosophy is not simply about creating things, but about creating with intention, seeing beyond the obvious and connecting people with ideas through innovation.",
+  pillars: [
+    {
+      title: "Build with purpose",
+      verb: "Build",
+      tagline: "Turn ideas into practical, valuable solutions.",
+      description:
+        "Use technology, logic and systems to turn ideas into practical solutions. Every creation should have a purpose and provide value.",
+      focus: "Engineering, Systems, Logic, Impact",
+    },
+    {
+      title: "See with vision",
+      verb: "See",
+      tagline: "Discover perspectives beyond the obvious.",
+      description:
+        "Look beyond what is immediately visible. Through photography and creative observation, discover new perspectives, capture meaningful moments and tell compelling stories.",
+      focus: "Photography, Creative Observation, Visual Storytelling",
+    },
+    {
+      title: "Connect through creativity",
+      verb: "Connect",
+      tagline: "Bring ideas, people, and possibilities together.",
+      description:
+        "Bring technology and visual storytelling together to connect ideas, people and possibilities. Like a node in a network, every creation can become part of something bigger.",
+      focus: "Networks, Creative Expression, Community, Synergy",
+    },
+  ],
+  mission:
+    "To bridge technology and visual creativity by building purposeful digital solutions and capturing meaningful perspectives that inspire connection, innovation and discovery.",
+  vision:
+    "To become a distinctive creative technology brand that transforms ideas into impactful digital experiences and visual stories, continually exploring the possibilities where technology and creativity intersect.",
+  values: [
+    {
+      name: "Innovation",
+      detail: "Explore new approaches and challenge conventional ways of creating.",
+    },
+    {
+      name: "Purpose",
+      detail: "Make every project meaningful and intentional.",
+    },
+    {
+      name: "Creativity",
+      detail: "Embrace originality, imagination and different perspectives.",
+    },
+    {
+      name: "Connection",
+      detail: "Bring people, ideas and technologies together.",
+    },
+    {
+      name: "Curiosity",
+      detail: "Keep observing, learning, experimenting and discovering.",
+    },
+    {
+      name: "Excellence",
+      detail: "Pay attention to detail and continuously improve the quality of every creation.",
+    },
+  ],
+  closingManifesto: {
+    statement:
+      "We believe technology gives ideas structure, creativity gives them expression, and connection gives them meaning.",
+    subtext:
+      "Through purposeful building and thoughtful observation, OPANODE brings digital innovation and visual storytelling together to create things that matter.",
+  },
+};
+
