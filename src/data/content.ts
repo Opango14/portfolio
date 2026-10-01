@@ -10,9 +10,82 @@ export const profile = {
   github: "https://github.com/Opango14",
   email: "opangotimothy14@gmail.com",
   linkedin: "https://www.linkedin.com/in/opango14",
+  devto: "https://dev.to/opango_timmy14",
+  x: "https://x.com/opango_dev14",
+  resumeUrl: "/Timothy_Opango_CV.pdf",
+  avatar: "/opango-dev.jpeg",
   summary:
     "Software developer with hands-on experience building full-stack web applications and backend systems using Python, Django, FastAPI, JavaScript and Go.",
 };
+
+export const socials = [
+  {
+    name: "GitHub",
+    handle: "@Opango14",
+    url: "https://github.com/Opango14",
+    description: "Open-source repositories, system prototypes & backend codebases",
+  },
+  {
+    name: "LinkedIn",
+    handle: "Timothy Opango",
+    url: "https://www.linkedin.com/in/opango14",
+    description: "Professional background, updates & career network",
+  },
+  {
+    name: "Dev.to",
+    handle: "@opango_timmy14",
+    url: "https://dev.to/opango_timmy14",
+    description: "Technical writing, engineering breakdowns & learning in public",
+  },
+  {
+    name: "X (Twitter)",
+    handle: "@opango_dev14",
+    url: "https://x.com/opango_dev14",
+    description: "Tech discussions, engineering thoughts & industry perspectives",
+  },
+];
+
+export type Hobby = {
+  title: string;
+  category: string;
+  description: string;
+  relationToEngineering: string;
+};
+
+export const hobbies: Hobby[] = [
+  {
+    title: "Photography & Visual Storytelling",
+    category: "Photography",
+    description:
+      "Capturing people, landscapes, and memorable moments while experimenting with composition, light, and perspective.",
+    relationToEngineering:
+      "Photography encourages patience and attention to detail, and helps me notice new perspectives.",
+  },
+  {
+    title: "Hiking",
+    category: "Outdoors",
+    description:
+      "Exploring trails, enjoying the outdoors, and taking in the scenery one hike at a time.",
+    relationToEngineering:
+      "Time on the trail is a welcome way to recharge and appreciate the world beyond a screen.",
+  },
+  {
+    title: "Playing Rugby",
+    category: "Sport",
+    description:
+      "Playing rugby for the challenge, teamwork, and energy of the game.",
+    relationToEngineering:
+      "Rugby builds communication, resilience, and a strong sense of working together.",
+  },
+  {
+    title: "Visiting New Places",
+    category: "Travel",
+    description:
+      "Discovering new places, experiencing different surroundings, and finding inspiration in the journey.",
+    relationToEngineering:
+      "Exploring somewhere new broadens my perspective and keeps my curiosity alive.",
+  },
+];
 
 export const navLinks = [
   { label: "Home", href: "/" },

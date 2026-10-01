@@ -1,6 +1,7 @@
-import { education, experience } from "../data/content";
+import { education, experience, hobbies, profile } from "../data/content";
 import { ButtonLink } from "./ButtonLink";
 import { PageHeader } from "./PageHeader";
+import { ResumeIcon } from "./SocialIcons";
 
 type JourneyCard = {
   org: string;
@@ -80,9 +81,9 @@ function JourneyCardView({ item, index }: { item: JourneyCard; index: number }) 
         </div>
 
         {/* Role Title */}
-        <h2 className="mt-5 font-display text-2xl font-semibold tracking-[-0.03em] text-[var(--color-ink)] sm:text-3xl">
+        <h3 className="mt-5 font-display text-2xl font-semibold tracking-[-0.03em] text-[var(--color-ink)] sm:text-3xl">
           {item.role}
-        </h2>
+        </h3>
 
         {/* Overview Description */}
         <p className="mt-4 text-[0.92rem] leading-7 text-[var(--color-muted)]">
@@ -133,7 +134,20 @@ export function Journey() {
           </>
         }
         description="Bridging classical computer science theory with high-velocity, peer-driven software engineering and production operations."
-      />
+      >
+        <div className="mt-8 flex flex-wrap items-center gap-4">
+          <ButtonLink href={profile.resumeUrl} variant="paper" size="md">
+            <ResumeIcon className="h-3.5 w-3.5" />
+            <span>Download Resume (PDF)</span>
+            <span>↓</span>
+          </ButtonLink>
+
+          <ButtonLink to="/contact" size="md">
+            <span>Get in Touch</span>
+            <span>→</span>
+          </ButtonLink>
+        </div>
+      </PageHeader>
 
       {/* ── Experience ─────────────────────────────────────── */}
       <section className="bg-[var(--color-bg)] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
@@ -141,7 +155,7 @@ export function Journey() {
           <div className="section-label">
             <span className="section-label-index">01</span>
             <span className="section-label-line" />
-            <span>Experience</span>
+            <span>Experience &amp; Apprenticeship</span>
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:gap-8">
@@ -154,7 +168,7 @@ export function Journey() {
           <div className="mt-20 section-label sm:mt-24">
             <span className="section-label-index">02</span>
             <span className="section-label-line" />
-            <span>Education</span>
+            <span>Education &amp; Academic Theory</span>
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:gap-8">
@@ -163,8 +177,50 @@ export function Journey() {
             ))}
           </div>
 
+          {/* ── Hobbies & Creative Pursuits ──────────────────── */}
+          <div className="mt-20 section-label sm:mt-24">
+            <span className="section-label-index">03</span>
+            <span className="section-label-line" />
+            <span>Relevant Hobbies &amp; Creative Pursuits</span>
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:gap-8">
+            {hobbies.map((hobby, idx) => (
+              <div
+                key={hobby.title}
+                className="flex flex-col justify-between border border-[var(--color-line)] bg-[var(--color-paper)] p-6 transition-all duration-300 hover:border-[var(--color-accent)]/50 sm:p-8"
+              >
+                <div>
+                  <div className="flex items-center justify-between border-b border-[var(--color-line)] pb-4 font-mono">
+                    <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-[var(--color-accent)]">
+                      0{idx + 1} // {hobby.category}
+                    </span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent)]" />
+                  </div>
+
+                  <h3 className="mt-5 font-display text-2xl font-semibold tracking-[-0.03em] text-[var(--color-ink)]">
+                    {hobby.title}
+                  </h3>
+
+                  <p className="mt-4 text-[0.92rem] leading-7 text-[var(--color-muted)]">
+                    {hobby.description}
+                  </p>
+
+                  <div className="mt-6 border-t border-[var(--color-line)] pt-4">
+                    <span className="font-mono text-[0.6rem] uppercase tracking-[0.14em] text-[var(--color-muted)]">
+                      Engineering Synergy:
+                    </span>
+                    <p className="mt-1 text-xs leading-5 text-[var(--color-ink)]">
+                      {hobby.relationToEngineering}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
           {/* Bottom Conversion Banner */}
-          <div className="mt-14 flex flex-col items-start justify-between gap-6 border border-[var(--color-line)] bg-[var(--color-charcoal)] p-7 sm:flex-row sm:items-center sm:p-10">
+          <div className="mt-20 flex flex-col items-start justify-between gap-6 border border-[var(--color-line)] bg-[var(--color-charcoal)] p-7 sm:flex-row sm:items-center sm:p-10">
             <div>
               <span className="font-mono text-[0.6rem] uppercase tracking-[0.16em] text-[var(--color-accent)]">
                 Next Steps
@@ -179,6 +235,11 @@ export function Journey() {
             </div>
 
             <div className="flex shrink-0 flex-wrap items-center gap-3">
+              <ButtonLink href={profile.resumeUrl} variant="paper">
+                <ResumeIcon className="h-3.5 w-3.5" />
+                <span>Resume (PDF)</span>
+                <span>↓</span>
+              </ButtonLink>
               <ButtonLink to="/work" variant="paper">
                 <span>Explore Work</span>
                 <span>↗</span>
