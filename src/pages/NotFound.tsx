@@ -6,7 +6,7 @@ export function NotFound() {
     <div className="overflow-hidden">
       <PageHeader
         label="404 // Not Found"
-        pill="Signal Lost · Page Not Found"
+        pill="Signal Lost | Page Not Found"
         title={
           <>
             <span>This page</span>

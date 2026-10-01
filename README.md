@@ -4,7 +4,7 @@ Personal portfolio for Timothy Opango Osundwa, backend & full-stack software dev
 
 ## Stack
 
-React · TypeScript · Vite · Tailwind CSS v4 · React Router
+React | TypeScript | Vite | Tailwind CSS v4 | React Router
 
 ## Getting started
 

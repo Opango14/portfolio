@@ -18,39 +18,39 @@ const experienceItems: JourneyCard[] = [
     period: "2026 – PRESENT",
     role: "Software Engineering Apprentice",
     description:
-      "Intensive peer-to-peer engineering curriculum mastering Go, JavaScript, and Python. Tackling algorithmic problem solving, custom data structures, low-level concurrency, and collaborative code reviews.",
+      "Intensive peer-to-peer engineering curriculum mastering Go, JavaScript and Python. Tackling algorithmic problem solving, custom data structures, low-level concurrency and collaborative code reviews.",
     points: experience[0]?.points || [
       "Peer-to-peer, project-based software engineering programme",
       "Go, JavaScript and Python across algorithms, data structures and debugging",
       "Git-based collaborative workflows and code reviews",
     ],
-    focus: "Go · Algorithms · Distributed Systems",
+    focus: "Go | Algorithms | Distributed Systems",
   },
   {
     org: "Anigraphics Copiers and IT Solutions",
     period: "JUNE 2025 – JAN 2026",
-    role: "IT & Operations Manager",
+    role: "IT and Operations Manager",
     description:
-      "Hands-on operational responsibility: hardware diagnostics, network troubleshooting, digital printing systems, customer technical support, and records management.",
+      "Hands-on operational responsibility: hardware diagnostics, network troubleshooting, digital printing systems, customer technical support and records management.",
     points: experience[1]?.points || [
       "IT support, hardware troubleshooting and basic networking",
       "Day-to-day digital printing operations and record keeping",
       "Direct customer support for technical issues",
     ],
-    focus: "Infrastructure · Uptime · Operations",
+    focus: "Infrastructure | Uptime | Operations",
   },
   {
     org: "Koitaleel Samoei University College",
     period: "MAY 2024 – AUG 2024",
     role: "ICT Assistant",
     description:
-      "Campus technical support across faculty and student environments: local area network diagnostics, Wi-Fi maintenance, hardware triage, and software maintenance.",
+      "Campus technical support across faculty and student environments: local area network diagnostics, Wi-Fi maintenance, hardware triage and software maintenance.",
     points: experience[2]?.points || [
       "Technical support for staff and students",
       "LAN/Wi-Fi troubleshooting and hardware diagnostics",
       "Software maintenance and basic technical training",
     ],
-    focus: "Systems Support · Hardware · Campus LAN",
+    focus: "Systems Support | Hardware | Campus LAN",
   },
 ];
 
@@ -60,9 +60,9 @@ const educationItems: JourneyCard[] = [
     period: `GRADUATED ${education.graduated}`,
     role: education.degree,
     description:
-      "Comprehensive academic foundation in computer science: database normalization, operating system concepts, network architecture, cybersecurity fundamentals, and algorithm design.",
+      "Comprehensive academic foundation in computer science: database normalization, operating system concepts, network architecture, cybersecurity fundamentals and algorithm design.",
     points: education.focus,
-    focus: "CS Theory · Databases · Security",
+    focus: "CS Theory | Databases | Security",
   },
 ];
 
@@ -123,7 +123,7 @@ export function Journey() {
       {/* ── Page Header ────────────────────────────────────── */}
       <PageHeader
         label="Professional Journey"
-        pill="Learning In Public · Execution Over Theory"
+        pill="Learning In Public | Execution Over Theory"
         title={
           <>
             <span>Grounded in practice</span>
@@ -155,7 +155,7 @@ export function Journey() {
           <div className="section-label">
             <span className="section-label-index">01</span>
             <span className="section-label-line" />
-            <span>Experience &amp; Apprenticeship</span>
+            <span>Experience and Apprenticeship</span>
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:gap-8">
@@ -168,7 +168,7 @@ export function Journey() {
           <div className="mt-20 section-label sm:mt-24">
             <span className="section-label-index">02</span>
             <span className="section-label-line" />
-            <span>Education &amp; Academic Theory</span>
+            <span>Education and Academic Theory</span>
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:gap-8">
@@ -181,7 +181,7 @@ export function Journey() {
           <div className="mt-20 section-label sm:mt-24">
             <span className="section-label-index">03</span>
             <span className="section-label-line" />
-            <span>Relevant Hobbies &amp; Creative Pursuits</span>
+            <span>Relevant Hobbies and Creative Pursuits</span>
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:gap-8">
@@ -230,7 +230,7 @@ export function Journey() {
               </h3>
               <p className="mt-2 text-xs leading-6 text-[var(--color-muted)]">
                 Open to full-time remote software engineering roles, team
-                collaborations, and contract backend engagements worldwide.
+                collaborations and contract full-stack engagements worldwide.
               </p>
             </div>
 

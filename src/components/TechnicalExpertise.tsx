@@ -8,8 +8,8 @@ export function TechnicalExpertise() {
     <div className="overflow-hidden">
       {/* ── Page Header ────────────────────────────────────── */}
       <PageHeader
-        label="Full Toolchain &amp; Capability"
-        pill="Backend First · Full-Stack Capable"
+        label="Full Toolchain and Capability"
+        pill="Frontend | Backend"
         title={
           <>
             <span>The full</span>
@@ -19,7 +19,7 @@ export function TechnicalExpertise() {
             </span>
           </>
         }
-        description="Python, Go, Django, FastAPI, Linux, Docker, PostgreSQL, and more — the complete matrix of what I work with, organized by discipline."
+        description="Python, Go, Django, FastAPI, Linux, Docker, PostgreSQL and more. The complete matrix of what I work with, organized by discipline."
       >
           <Link
             to="/work"
@@ -78,7 +78,7 @@ export function TechnicalExpertise() {
                 Need a technology that isn&apos;t listed here?
               </h4>
               <p className="mt-1 text-xs text-[var(--color-muted)]">
-                Open to full-time remote roles, collaborations, and contract backend engagements worldwide — tell me what you&apos;re building.
+                Open to full-time remote roles, collaborations and contract full-stack engagements worldwide. Tell me what you&apos;re building.
               </p>
             </div>
             <ButtonLink to="/contact" className="shrink-0">

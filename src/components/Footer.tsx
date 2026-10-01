@@ -14,7 +14,7 @@ export function Footer() {
             rel="noreferrer"
             className="transition-colors hover:text-[var(--color-accent)]"
           >
-            GitHub
+            GitHub |
           </a>
           <a
             href={profile.linkedin}
@@ -22,7 +22,7 @@ export function Footer() {
             rel="noreferrer"
             className="transition-colors hover:text-[var(--color-accent)]"
           >
-            LinkedIn
+            LinkedIn |
           </a>
           <a
             href={profile.devto}
@@ -30,7 +30,7 @@ export function Footer() {
             rel="noreferrer"
             className="transition-colors hover:text-[var(--color-accent)]"
           >
-            Dev.to
+            Dev.to |
           </a>
           <a
             href={profile.x}
@@ -38,7 +38,7 @@ export function Footer() {
             rel="noreferrer"
             className="transition-colors hover:text-[var(--color-accent)]"
           >
-            X
+            X |
           </a>
           <a
             href={profile.resumeUrl}

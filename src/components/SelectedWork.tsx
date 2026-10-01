@@ -23,12 +23,12 @@ const topologies: Record<string, ProjectTopology> = {
       },
       {
         label: "Step 02 / Consensus & Ledger",
-        title: "ACID Atomic Ledger Entry & Double Validation",
+        title: "ACID Atomic Ledger Entry and Double Validation",
         detail: "Balances updated simultaneously; prevents duplicate payouts.",
       },
       {
         label: "Step 03 / Dissemination",
-        title: "Automated Queue Payout & Excel Audit Export",
+        title: "Automated Queue Payout and Excel Audit Export",
         detail: "Generates verifiable community reports for offline meetings.",
       },
     ],
@@ -38,12 +38,12 @@ const topologies: Record<string, ProjectTopology> = {
     steps: [
       {
         label: "Step 01 / Spatial Ingestion",
-        title: "Coordinate Normalization & GIS Tile Lookup",
+        title: "Coordinate Normalization and GIS Tile Lookup",
         detail: "Receives farmer geo-coordinates and queries regional raster layers.",
       },
       {
         label: "Step 02 / Decision Engine",
-        title: "In-Memory Weather Cache & Agro-Climatic Rule Processing",
+        title: "In-Memory Weather Cache and Agro-Climatic Rule Processing",
         detail: "Evaluates soil moisture heuristics against cached forecast data.",
       },
       {
@@ -58,12 +58,12 @@ const topologies: Record<string, ProjectTopology> = {
     steps: [
       {
         label: "Step 01 / Capture",
-        title: "Debounced Client Input & Lightweight REST Payload",
+        title: "Debounced Client Input and Lightweight REST Payload",
         detail: "Captures bilingual phrases with minimal network payload overhead.",
       },
       {
         label: "Step 02 / Translation Engine",
-        title: "Django REST API Translation & Model Inference",
+        title: "Django REST API Translation and Model Inference",
         detail: "Processes linguistic mappings through server-side translation logic.",
       },
       {
@@ -78,7 +78,7 @@ const topologies: Record<string, ProjectTopology> = {
     steps: [
       {
         label: "Step 01 / Origin Minting",
-        title: "Farm-Level Harvest Tagging & Batch Tokenization",
+        title: "Farm-Level Harvest Tagging and Batch Tokenization",
         detail: "Records crop batch origin and grower metadata at source.",
       },
       {
@@ -98,17 +98,17 @@ const topologies: Record<string, ProjectTopology> = {
     steps: [
       {
         label: "Step 01 / Discovery",
-        title: "Mobile-First Menu & Experience Hierarchy",
+        title: "Mobile-First Menu and Experience Hierarchy",
         detail: "Engineered for quick patron scanning on mobile data connections.",
       },
       {
         label: "Step 02 / Optimization",
-        title: "Zero-Bloat Asset Delivery & Responsive Layouts",
+        title: "Zero-Bloat Asset Delivery and Responsive Layouts",
         detail: "Ensures fast paint times and high clarity on variable mobile networks.",
       },
       {
         label: "Step 03 / Conversion",
-        title: "Direct Ordering, Reservation & Location Links",
+        title: "Direct Ordering, Reservation and Location Links",
         detail: "Converts digital visitors into table reservations and in-person diners.",
       },
     ],
@@ -116,32 +116,32 @@ const topologies: Record<string, ProjectTopology> = {
 };
 
 const defaultTopology: ProjectTopology = {
-  header: "SYSTEM ARCHITECTURE & FLOW",
+  header: "SYSTEM ARCHITECTURE AND FLOW",
   steps: [
     {
       label: "Step 01 / Ingestion",
-      title: "Input Processing & Verification",
+      title: "Input Processing and Verification",
       detail: "Validates incoming data payloads and checks authentication boundaries.",
     },
     {
       label: "Step 02 / Processing",
-      title: "Core Business Logic & State Transition",
+      title: "Core Business Logic and State Transition",
       detail: "Executes deterministic state transitions with transactional integrity.",
     },
     {
       label: "Step 03 / Delivery",
-      title: "Response Serialization & Presentation",
+      title: "Response Serialization and Presentation",
       detail: "Dispatches validated responses and updates client-side interfaces.",
     },
   ],
 };
 
 const statusLabels: Record<string, string> = {
-  "merry-chama": "Live In Production · Real Users",
+  "merry-chama": "Live In Production | Real Users",
   kilimoclick: "Agri-Tech Decision Engine",
-  translator: "Asynchronous REST & Vanilla Client",
-  shambachain: "Hackathon Innovation · Supply Chain",
-  "agwata-restaurant": "Client Production · Live Marketing",
+  translator: "Asynchronous REST and Vanilla Client",
+  shambachain: "Hackathon Innovation | Supply Chain",
+  "agwata-restaurant": "Client Production | Live Marketing",
 };
 
 export function SelectedWork() {
@@ -161,17 +161,17 @@ export function SelectedWork() {
       {/* ── Page Header ────────────────────────────────────── */}
       <PageHeader
         label="Selected Work"
-        pill="Production Systems · Shipped & In Use"
+        pill="Production Systems | Shipped and In Use"
         title={
           <>
             <span>Production systems,</span>
             <br />
             <span className="text-[var(--color-accent)]">
-              decision engines &amp; architecture.
+              decision engines and architecture.
             </span>
           </>
         }
-        description="A comprehensive look into software engineered and shipped—spanning auditable financial ledgers, geospatial raster caching, decoupled asynchronous protocols, and full-stack applications."
+        description="A comprehensive look into software engineered and shipped-spanning auditable financial ledgers, geospatial raster caching, decoupled asynchronous protocols and full-stack applications."
       >
           {/* Filter Pills */}
           <div className="mt-12 flex flex-wrap gap-2 border-t border-[var(--color-line)] pt-6">
@@ -302,7 +302,7 @@ export function SelectedWork() {
                     <div className="border border-[var(--color-line)] bg-[var(--color-paper)] p-6 sm:p-8">
                       <div className="flex items-center justify-between border-b border-[var(--color-line)] pb-4">
                         <span className="font-mono text-[0.62rem] uppercase tracking-[0.16em] text-[var(--color-muted)]">
-                          System Topology &amp; Logic
+                          System Topology and Logic
                         </span>
                         <span className="font-mono text-[0.58rem] text-[var(--color-accent)]">
                           {topo.header}

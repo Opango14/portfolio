@@ -21,14 +21,6 @@ export function HomeHero() {
               Available for Remote Engineering
             </span>
           </div>
-
-          <span className="hidden font-mono text-[0.62rem] text-[var(--color-muted)] sm:inline">
-            /
-          </span>
-
-          <span className="font-mono text-[0.62rem] uppercase tracking-[0.14em] text-[var(--color-muted)]">
-            {profile.location} (UTC+3) · Zone01 Apprentice
-          </span>
         </div>
 
         {/* Main Grid: Headline & Profile Photo */}
@@ -45,11 +37,11 @@ export function HomeHero() {
 
             <p className="reveal-2 mt-8 max-w-[50ch] text-[1.05rem] leading-relaxed text-[var(--color-muted)] sm:text-[1.15rem]">
               I design and build resilient backend services, transactional data
-              ledgers, and lean full-stack applications with{" "}
+              ledgers and lean full-stack applications with{" "}
               <span className="text-[var(--color-ink)]">
-                Python, Django, FastAPI, and Go
+                Python, React, FastAPI and Go
               </span>
-              . Focused on clean system logic, data integrity, and shipping software
+              . Focused on clean system logic, data integrity and shipping software
               that holds up in production.
             </p>
 
@@ -152,7 +144,7 @@ export function HomeHero() {
 
               <div className="mt-3 flex items-center justify-between border-t border-[var(--color-line)] pt-2.5 font-mono text-[0.58rem] uppercase tracking-[0.14em] text-[var(--color-muted)]">
                 <span>Software Developer</span>
-                <span>Kenya · Remote</span>
+                <span>Kenya | Remote</span>
               </div>
             </div>
           </div>
@@ -164,9 +156,8 @@ export function HomeHero() {
             <div className="flex items-center justify-between font-mono text-[0.58rem] uppercase tracking-[0.16em] text-[var(--color-muted)]">
               <span className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent)]" />
-                SYSTEM TELEMETRY &amp; SPECIALIZATION
+                SYSTEM TELEMETRY AND SPECIALIZATION
               </span>
-              <span>OPANODE / SYS-INDEX</span>
             </div>
           </div>
 
@@ -193,10 +184,10 @@ export function HomeHero() {
                 02 / Core Focus
               </dt>
               <dd className="font-display text-base font-semibold text-[var(--color-ink)]">
-                Backend &amp; APIs
+                Backend and APIs
               </dd>
               <span className="text-xs text-[var(--color-muted)]">
-                Transactional integrity &amp; REST architectures
+                Transactional integrity and REST architectures
               </span>
               <Link
                 to="/work"
@@ -210,7 +201,7 @@ export function HomeHero() {
                 03 / Primary Languages
               </dt>
               <dd className="font-display text-base font-semibold text-[var(--color-ink)]">
-                Python · Go · TypeScript
+                Python | Go | JavaScript
               </dd>
               <span className="text-xs text-[var(--color-muted)]">
                 Django, FastAPI, SQLite, PostgreSQL
@@ -230,7 +221,7 @@ export function HomeHero() {
                 Open to Opportunities
               </dd>
               <span className="text-xs text-[var(--color-muted)]">
-                Full-time remote roles &amp; contract engineering
+                Full-time remote roles and contract engineering
               </span>
               <Link
                 to="/contact"

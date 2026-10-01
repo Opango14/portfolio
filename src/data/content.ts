@@ -5,7 +5,7 @@ export const profile = {
   name: "Timothy Opango",
   fullName: "Timothy Opango Osundwa",
   brand: "Opanode",
-  role: "Software Developer · Backend & Full-Stack Developer",
+  role: "Software Developer | Backend & Full-Stack Developer",
   location: "Kenya",
   github: "https://github.com/Opango14",
   email: "opangotimothy14@gmail.com",
@@ -54,18 +54,18 @@ export type Hobby = {
 
 export const hobbies: Hobby[] = [
   {
-    title: "Photography & Visual Storytelling",
+    title: "Photography and Visual Storytelling",
     category: "Photography",
     description:
-      "Capturing people, landscapes, and memorable moments while experimenting with composition, light, and perspective.",
+      "Capturing people, landscapes and memorable moments while experimenting with composition, light and perspective.",
     relationToEngineering:
-      "Photography encourages patience and attention to detail, and helps me notice new perspectives.",
+      "Photography encourages patience and attention to detail and helps me notice new perspectives.",
   },
   {
     title: "Hiking",
     category: "Outdoors",
     description:
-      "Exploring trails, enjoying the outdoors, and taking in the scenery one hike at a time.",
+      "Exploring trails, enjoying the outdoors and taking in the scenery one hike at a time.",
     relationToEngineering:
       "Time on the trail is a welcome way to recharge and appreciate the world beyond a screen.",
   },
@@ -73,15 +73,15 @@ export const hobbies: Hobby[] = [
     title: "Playing Rugby",
     category: "Sport",
     description:
-      "Playing rugby for the challenge, teamwork, and energy of the game.",
+      "Playing rugby for the challenge, teamwork and energy of the game.",
     relationToEngineering:
-      "Rugby builds communication, resilience, and a strong sense of working together.",
+      "Rugby builds communication, resilience and a strong sense of working together.",
   },
   {
     title: "Visiting New Places",
     category: "Travel",
     description:
-      "Discovering new places, experiencing different surroundings, and finding inspiration in the journey.",
+      "Discovering new places, experiencing different surroundings and finding inspiration in the journey.",
     relationToEngineering:
       "Exploring somewhere new broadens my perspective and keeps my curiosity alive.",
   },
@@ -133,7 +133,7 @@ export const featuredProjects: Project[] = [
     github: "https://github.com/HACKWITHNESBITT/KilimoClick",
     role: "Backend engineering",
     description:
-      "An agricultural decision-support system that turns soil, GIS and forecast data into a plain answer for a farmer: is this crop suited here, and does the field need water today.",
+      "An agricultural decision-support system that turns soil, GIS and forecast data into a plain answer for a farmer: is this crop suited here and does the field need water today.",
     highlights: [
       "Crop-suitability and irrigation-timing decision logic",
       "GIS raster retrieval with a forecast caching layer",
@@ -147,10 +147,10 @@ export const featuredProjects: Project[] = [
     stack: ["Python", "Django", "JavaScript", "REST API"],
     github: "https://github.com/Opango14/Full-Stack-Take-Home",
     description:
-      "A bilingual translation tool with a Django API and a framework-free JavaScript frontend that updates results in place, without a page reload.",
+      "A bilingual translation tool with a Django API and a framework-free JavaScript frontend that updates results in place without a page reload.",
     highlights: [
       "REST endpoint powering asynchronous translation requests",
-      "Vanilla JS frontend — no framework overhead",
+      "Vanilla JS frontend and no framework overhead",
     ],
   },
 ];
@@ -164,7 +164,7 @@ export const additionalProjects: Project[] = [
     github: "https://github.com/Opango14/shambachain",
     role: "Project management & technical collaboration",
     description:
-      "A team hackathon project exploring blockchain as a traceability layer for agricultural produce, from farm to buyer.",
+      "A team hackathon project exploring blockchain as a traceability layer for agricultural produce from farm to buyer.",
     highlights: [
       "Coordinated team direction and delivery, not the core build",
     ],
@@ -244,31 +244,32 @@ export type ExpertiseGroup = {
 export const expertise: ExpertiseGroup[] = [
   {
     title: "Backend",
-    tag: "Services & APIs",
+    tag: "Services and APIs",
     description:
-      "Python and Go services built on Django and FastAPI — REST contracts, relational schema design, and data flows kept explicit and predictable.",
+      "Python and Go services built on Django and FastAPI or REST contracts, relational schema design and data flows kept explicit and predictable.",
     items: ["Python", "Go", "Django", "FastAPI", "REST APIs", "Database design"],
   },
   {
     title: "Frontend",
-    tag: "Interfaces & UX",
+    tag: "Interfaces and UX",
     description:
       "React and TypeScript for product interfaces, with vanilla JavaScript and hand-written CSS when a lighter client is the right call.",
     items: ["JavaScript", "HTML", "CSS", "React", "TypeScript", "Tailwind CSS"],
   },
   {
     title: "Dev environment",
-    tag: "Tooling & Delivery",
+    tag: "Tooling and Delivery",
     description:
-      "A Linux-first daily workflow with Git, Docker, and PostgreSQL keeping builds, reviews, and deployments repeatable.",
+      "A Linux-first daily workflow with Git, Docker and PostgreSQL keeping builds, reviews and deployments repeatable.",
     items: ["Linux", "Git", "GitHub", "Docker", "PostgreSQL"],
   },
   {
     title: "Engineering interests",
-    tag: "Direction & Growth",
+    tag: "Direction and Growth",
     description:
       "The problem spaces I keep pulling toward: backend systems, web applications, cybersecurity, APIs, and open-source software.",
     items: [
+      "Frontend achitecture",
       "Backend systems",
       "Web applications",
       "Cybersecurity",
@@ -322,7 +323,7 @@ export const opanodePhilosophy = {
     {
       title: "Connect through creativity",
       verb: "Connect",
-      tagline: "Bring ideas, people, and possibilities together.",
+      tagline: "Bring ideas, people and possibilities together.",
       description:
         "Bring technology and visual storytelling together to connect ideas, people and possibilities. Like a node in a network, every creation can become part of something bigger.",
       focus: "Networks, Creative Expression, Community, Synergy",
@@ -360,7 +361,7 @@ export const opanodePhilosophy = {
   ],
   closingManifesto: {
     statement:
-      "We believe technology gives ideas structure, creativity gives them expression, and connection gives them meaning.",
+      "We believe technology gives ideas structure, creativity gives them expression and connection gives them meaning.",
     subtext:
       "Through purposeful building and thoughtful observation, OPANODE brings digital innovation and visual storytelling together to create things that matter.",
   },

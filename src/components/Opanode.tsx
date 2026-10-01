@@ -41,7 +41,7 @@ export function Opanode() {
           <div className="mt-14 border border-[var(--color-line)] bg-[var(--color-paper)] p-6 sm:p-8">
             <div className="flex items-center justify-between border-b border-[var(--color-line)] pb-4 font-mono text-[0.6rem] uppercase tracking-[0.16em] text-[var(--color-muted)]">
               <span>The Meaning Behind the Name</span>
-              <span className="text-[var(--color-accent)]">ETIMOLOGY &amp; IDENTITY</span>
+              <span className="text-[var(--color-accent)]">ETIMOLOGY AND IDENTITY</span>
             </div>
 
             <div className="mt-6 grid gap-6 sm:grid-cols-3">
@@ -50,7 +50,7 @@ export function Opanode() {
                   {nameMeaning.opa.element}
                 </span>
                 <h3 className="mt-2 font-display text-lg font-semibold text-[var(--color-ink)]">
-                  Identity &amp; Origin
+                  Identity and Origin
                 </h3>
                 <p className="mt-2 text-xs leading-5 text-[var(--color-muted)]">
                   {nameMeaning.opa.meaning}
@@ -62,7 +62,7 @@ export function Opanode() {
                   {nameMeaning.node.element}
                 </span>
                 <h3 className="mt-2 font-display text-lg font-semibold text-[var(--color-ink)]">
-                  Connection &amp; Systems
+                  Connection and Systems
                 </h3>
                 <p className="mt-2 text-xs leading-5 text-[var(--color-muted)]">
                   {nameMeaning.node.meaning}
@@ -118,7 +118,7 @@ export function Opanode() {
                     The Tools to Build
                   </h4>
                   <p className="mt-2 text-xs leading-6 text-[var(--color-muted)]">
-                    Software engineering, backend logic, APIs, and dependable architectures turn abstract concepts into tangible, resilient systems.
+                    Software engineering, backend logic, APIs and dependable architectures turn abstract concepts into tangible, resilient systems.
                   </p>
                 </div>
 
@@ -130,7 +130,7 @@ export function Opanode() {
                     The Ability to See
                   </h4>
                   <p className="mt-2 text-xs leading-6 text-[var(--color-muted)]">
-                    Looking beyond the obvious. Framing, light, patience, and creative perception that capture authentic narratives.
+                    Looking beyond the obvious. Framing, light, patience and creative perception that capture authentic narratives.
                   </p>
                 </div>
 
@@ -142,7 +142,7 @@ export function Opanode() {
                     The Meaningful Network
                   </h4>
                   <p className="mt-2 text-xs leading-6 text-[var(--color-muted)]">
-                    Bridging people, ideas, and technologies together like nodes in an interconnected ecosystem.
+                    Bridging people, ideas and technologies together like nodes in an interconnected ecosystem.
                   </p>
                 </div>
               </div>
@@ -208,7 +208,7 @@ export function Opanode() {
           <div className="section-label">
             <span className="section-label-index">03</span>
             <span className="section-label-line" />
-            <span>Mission &amp; Vision</span>
+            <span>Mission and Vision</span>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
@@ -217,7 +217,7 @@ export function Opanode() {
                 Our Mission
               </span>
               <h3 className="mt-3 font-display text-2xl font-semibold text-[var(--color-ink)] sm:text-3xl">
-                Bridging technology &amp; visual creativity.
+                Bridging technology and visual creativity.
               </h3>
               <p className="mt-6 text-[1.02rem] leading-8 text-[var(--color-muted)]">
                 {mission}

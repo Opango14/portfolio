@@ -18,7 +18,7 @@ export function Contact() {
       {/* ── Page Header ────────────────────────────────── */}
       <PageHeader
         label="Contact"
-        pill="Open To Opportunities · Reply Within 24 Hours"
+        pill="Open To Opportunities | Reply Within 24 Hours"
         title={
           <>
             <span>Let&apos;s build</span>
@@ -26,7 +26,7 @@ export function Contact() {
             <span className="text-[var(--color-accent)]">something useful.</span>
           </>
         }
-        description="Currently open to full-time software engineering roles, team collaborations, and contract backend engagements worldwide. If your team values solid system design, clear communication, and shipping software with care, I&apos;d love to connect."
+        description="Currently open to full-time software engineering roles, team collaborations and contract full-stack engagements worldwide. If your team values solid system design, clear communication and shipping software with care, I&apos;d love to connect."
       />
 
       {/* ── Direct Channels ─────────────────────────────── */}
@@ -69,12 +69,6 @@ export function Contact() {
                   height="112"
                 />
                 <div>
-                  <div className="flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-[var(--color-accent)]" />
-                    <span className="font-mono text-[0.62rem] font-bold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-                      {profile.brand} // {profile.location}
-                    </span>
-                  </div>
                   <h3 className="mt-2 font-display text-xl font-semibold text-[var(--color-ink)]">
                     {profile.fullName}
                   </h3>
@@ -82,7 +76,7 @@ export function Contact() {
                     {profile.role}
                   </p>
                   <p className="mt-3 text-xs leading-5 text-[var(--color-muted)]">
-                    Open to remote software engineering roles, backend systems architecture, and engineering collaborations.
+                    Open to remote software engineering roles, backend systems architecture and engineering collaborations.
                   </p>
                 </div>
               </div>
@@ -91,7 +85,7 @@ export function Contact() {
             {/* Right Column (5 cols): Social Links Directory */}
             <div className="border-t border-[var(--color-line)] pt-8 lg:col-span-5 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
               <span className="font-mono text-[0.62rem] uppercase tracking-[0.16em] text-[var(--color-muted)]">
-                Social Networks &amp; Profiles
+                Social Networks and Profiles
               </span>
 
               <div className="mt-6 flex flex-col gap-3 font-mono text-[0.72rem] font-bold uppercase tracking-[0.14em]">
