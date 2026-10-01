@@ -93,7 +93,7 @@ function JourneyCardView({ item, index }: { item: JourneyCard; index: number }) 
         {/* Core Deliverables / Focus */}
         <div className="mt-6 space-y-2 border-t border-[var(--color-line)] pt-5">
           <span className="font-mono text-[0.6rem] uppercase tracking-[0.14em] text-[var(--color-muted)]">
-            Key Highlights &amp; Practice
+            Key Highlights and Practice
           </span>
           <ul className="mt-2 space-y-2">
             {item.points.map((pt) => (

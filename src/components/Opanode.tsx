@@ -124,7 +124,7 @@ export function Opanode() {
 
                 <div className="border border-[var(--color-line)] bg-[var(--color-bg)] p-6">
                   <span className="text-[0.6rem] font-bold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-                    DISCIPLINE 02 // PHOTOGRAPHY &amp; OBSERVATION
+                    DISCIPLINE 02 // PHOTOGRAPHY AND OBSERVATION
                   </span>
                   <h4 className="mt-2 font-display text-xl font-semibold text-[var(--color-ink)]">
                     The Ability to See
